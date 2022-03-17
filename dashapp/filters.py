@@ -71,7 +71,7 @@ def applyfilter():
     ###filter widgets
     #cof = st.sidebar.radio("Crashes or Fatalities", ('Crashes', 'Fatalities'))
     
-    st.sidebar.subwrite("Choose Time based Filters")
+    st.sidebar.header("Choose Time based Filters")
     see_yea = st.sidebar.checkbox("Select Year")
     if see_yea:
         yea = st.sidebar.radio("Year", (2013, 2014, 2015, 2016, 2017))
@@ -99,7 +99,7 @@ def applyfilter():
         st.write("Hourly filter applied")
         #st.write("Hour Filter is Applied")
 
-    st.sidebar.subwrite("Choose Condition based Filters")
+    st.sidebar.header("Choose Condition based Filters")
     see_ph = st.sidebar.checkbox('Apply peak hour filter')
     if see_ph:
         ph = st.sidebar.radio("Peak vs Off-peak", ("Peak hour", "Off-peak hour"))
