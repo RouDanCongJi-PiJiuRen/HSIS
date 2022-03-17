@@ -15,6 +15,6 @@ app.add_app("Home Page",home.app)
 app.add_app("Map", map_draft.app)
 app.add_app("Timeline", histogramtime.app)
 app.add_app("Factors", factors.app)
-app.add_app("hy",hy.app)
+#app.add_app("hy",hy.app)
 # The main app
 app.run()
