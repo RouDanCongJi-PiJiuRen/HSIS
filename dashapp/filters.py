@@ -145,7 +145,7 @@ def applyfilter():
 
     see_acctyp = st.sidebar.checkbox("Select for Vehicle to Vehicle Collision")
     if see_acctyp:
-        acctyp = st.sidebar.radio("Vehicle only", ("Vehicle to Vehicle"))
+        acctyp = st.sidebar.radio("Vehicle only", ["Vehicle to Vehicle"])
         #data = data.loc[data['ACCTYPE'] == acctyp]
         st.header("Only Vehicle to Vehicle Collision filter applied")
 
