@@ -5,6 +5,7 @@ import datetime
 import matplotlib.pyplot as plt
 import altair as alt
 import settings
+import filters
 
 def app():
     
