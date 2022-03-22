@@ -37,7 +37,7 @@ def app():
                 alt.value('#5252ff')  # And if it's not true it sets the bar steelblue.
             )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Crashes)
+       #st.write(alt.datum.Crashes)
 
         st.subheader('Number of Fatalities by Weather Type')
         fatal_count = data.groupby(['weather']).sum()
@@ -52,7 +52,7 @@ def app():
                 alt.value('#0000a8')   # And if it's not true it sets the bar steelblue.
                 )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Fatalities)
+        #st.write(alt.datum.Fatalities)
 
     with col2:
         #st.title ("Light Conditions")
@@ -69,7 +69,7 @@ def app():
                 alt.value('#5252ff')  # And if it's not true it sets the bar steelblue.
             )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Crashes)
+        #st.write(alt.datum.Crashes)
 
         st.subheader('Number of Fatalities by Light Conditions')
         fatal_count = data.groupby(['LIGHT']).sum()
@@ -84,7 +84,7 @@ def app():
                 alt.value('#0000a8')  # And if it's not true it sets the bar steelblue.
             )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Fatalities)
+        #st.write(alt.datum.Fatalities)
     with col3:
         st.subheader('Number of Crashes by Road Surface Conditions')
         crash_count = data.groupby(['RDSURF']).count()
@@ -99,7 +99,7 @@ def app():
                 alt.value('#5252ff')  # And if it's not true it sets the bar steelblue.
             )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Crashes)
+        #st.write(alt.datum.Crashes)
 
         st.subheader('Number of Fatalities by Road Surface Conditions')
         fatal_count = data.groupby(['RDSURF']).sum()
@@ -114,7 +114,7 @@ def app():
                 alt.value('#0000a8')  # And if it's not true it sets the bar steelblue.
             )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Fatalities)
+        #st.write(alt.datum.Fatalities)
     with col4:
         st.subheader('Number of Crashes by Pavement Type')
         crash_count = data.groupby(['SURF_TYP']).count()
@@ -129,7 +129,7 @@ def app():
                 alt.value('#5252ff')  # And if it's not true it sets the bar steelblue.
             )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Crashes)
+        #st.write(alt.datum.Crashes)
 
         st.subheader('Number of Fatalities by Pavement Type')
         fatal_count = data.groupby(['SURF_TYP']).sum()
@@ -144,7 +144,7 @@ def app():
                 alt.value('#0000a8')  # And if it's not true it sets the bar steelblue.
             )).interactive()
         st.altair_chart(c)
-        st.write(alt.datum.Fatalities)
+        #st.write(alt.datum.Fatalities)
 
 
 
